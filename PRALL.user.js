@@ -2,7 +2,7 @@
 // @name        PRALL
 // @namespace   pnoexz.com
 // @include     https://www.reddit.com/r/all/*
-// @version     1
+// @version     2.0.0
 // @grant       none
 // @require     https://code.jquery.com/jquery-3.2.1.min.js
 // ==/UserScript==
@@ -154,6 +154,7 @@ var observer = new MutationObserver(function(mutations, observer) {
 	// fired when a mutation occurs
 	console.log(mutations, observer);
 	ApplyFilter();
+	drawButtons();
 });
 
 // define what element should be observed by the observer
