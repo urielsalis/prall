@@ -20,7 +20,7 @@ $.ajax({
   },
   error: function(XMLHttpRequest, textStatus, errorThrown) {
     console.debug(XMLHttpRequest);
-    alert("Error getting user info: " + errorThrown); 
+    alert("PRAll: Error getting user info: " + errorThrown); 
   }
 })
 
@@ -99,7 +99,7 @@ function filterSubreddit(subredditName) {
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
       console.debug(XMLHttpRequest);
-      alert("Error filtering " + subredditName); 
+      alert("PRAll: Error filtering " + subredditName); 
     }
   })
 }
